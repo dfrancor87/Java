@@ -1,0 +1,11 @@
+hola esto es una linea 
+por eso hay 
+que escribir  mas de una linea para probar si en realidada
+el 
+programa
+hace lo que se pide y solo guarda lineas entre  15 y 50
+caracteres okokok
+vale
+hecho
+esta aparece a que si
+y esta no va a aparece xq es grande

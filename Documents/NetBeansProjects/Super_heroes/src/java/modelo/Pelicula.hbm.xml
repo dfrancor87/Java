@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-abr-2018 18:55:13 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Pelicula" table="pelicula" catalog="super_heroes" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nombrePelicula" type="string">
+            <column name="nombre_pelicula" length="100" not-null="true" />
+        </property>
+        <many-to-one name="personaje" class="modelo.Personaje" fetch="select" cascade="all">
+            <column name="id_personaje" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

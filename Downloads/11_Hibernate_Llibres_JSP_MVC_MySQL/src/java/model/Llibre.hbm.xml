@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="model.Llibre" table="t_llibres">
+        <id name="idLlibre" type="int">
+            <column name="id_llibre" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="titol" type="string">
+            <column name="TITOL" length="50" not-null="true" />
+        </property>
+        <property name="autor" type="string">
+            <column name="AUTOR" length="20" not-null="true" />
+        </property>   
+    </class>
+</hibernate-mapping>

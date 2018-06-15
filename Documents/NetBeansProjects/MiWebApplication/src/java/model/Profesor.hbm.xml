@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-abr-2018 7:22:59 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Profesor" table="profesor" catalog="bd_proves" optimistic-lock="version">
+        <id name="idProfesor" type="int">
+            <column name="idProfesor" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="20" not-null="true" />
+        </property>
+        <property name="ape1" type="string">
+            <column name="ape1" length="20" not-null="true" />
+        </property>
+        <one-to-one name="direc" cascade="all" />
+    </class>
+</hibernate-mapping>
